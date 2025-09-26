@@ -1,65 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - BloomCare</title>
-  <link rel="stylesheet" href="../css/about.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flo - About</title>
+  <link rel="stylesheet" href="../css/about.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="inner">
-      <h1 class="brand">NurtureHer</h1>
-      <p class="tag">Designed for autistic women with PCOD/PCOS</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>
+        We’re NurtureHer, the world’s most<br />
+        popular female health app
+      </h1>
+      <p>
+        380 million women and people who have periods trust us to help them
+        <br />
+        understand their bodies better<sup>1,2</sup>.
+      </p>
     </div>
-  </header>
+  </section>
 
+  <!-- SEPARATE ACCORDION: "How does Flo work?" -->
+  <section class="accordion" id="how-section" aria-label="How does Flo work section">
+    <div class="accordion-item">
+      <div class="accordion-header" role="button" tabindex="0" aria-controls="how-content">
+        <h2>How does NurtureHer work?</h2>
+        <button class="toggle-btn" aria-expanded="false" aria-controls="how-content" title="Toggle">▾</button>
+      </div>
+
+      <div id="how-content" class="accordion-content" role="region" aria-labelledby="">
+        <p>Flo supports women at every stage — from first period, pregnancy, to menopause.</p>
+        <ul>
+          <li>Cycle & ovulation tracking</li>
+          <li>Symptom monitoring (70+ symptoms)</li>
+          <li>Health insights from 120+ doctors</li>
+          <li>Private Secret Chats community</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- A VISIBLE GAP HERE: next accordion is physically separated -->
+  <!-- SEPARATE ACCORDION: "Flo's mission" -->
+  <section class="accordion" id="mission-section" aria-label="Flo's mission section">
+    <div class="accordion-item">
+      <div class="accordion-header" role="button" tabindex="0" aria-controls="mission-content">
+        <h2>NurtureHer's mission</h2>
+        <button class="toggle-btn" aria-expanded="false" aria-controls="mission-content" title="Toggle">▾</button>
+      </div>
+
+      <div id="mission-content" class="accordion-content" role="region" aria-labelledby="">
+        <p>
+          Flo’s mission is to improve female health through research, education, and trusted medical insights.
+        </p>
+        <ul>
+          <li>Personalized insights to live better</li>
+          <li>Evidence-based health information</li>
+          <li>Research with Mayo Clinic and other partners</li>
+          <li>Partnerships to improve education (eg. UNFPA)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+   <section class="card team">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="avatar">R</div>
+          <h4>Riya Sharma</h4>
+          <p>Gynecologist & PCOS Specialist</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">A</div>
+          <h4>Aditya Verma</h4>
+          <p>Endocrinologist</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">S</div>
+          <h4>Sneha Patil</h4>
+          <p>Mental Health & Wellness Coach</p>
+        </div>
+      </div>
+    </section>
+
+     <!-- Main Content -->
   <main class="container">
 
-    <section class="card about-us">
-      <h2>About Us</h2>
-      <p>
-        BloomCare is designed to support autistic women managing PCOD and PCOS. 
-        We understand the unique challenges faced by autistic women in tracking menstrual cycles, managing symptoms, and maintaining mental wellness.
-      </p>
-      <p>
-        Our goal is to provide a calm, sensory-friendly, and easy-to-use digital space where users can log their periods, symptoms, mood, and routines, 
-        receive reminders, and access helpful resources — all while respecting privacy and personal preferences.
-      </p>
+    <!-- Who We Are -->
+    <section class="card who-we-are">
+      <h2>Who We Are</h2>
+      <p>NurtureHer is a healthcare platform dedicated to supporting autistic women managing PCOD and PCOS. We combine expertise in gynecology, endocrinology, mental wellness, and nutrition to provide a holistic, user-friendly, and supportive digital space. Our focus is on simplifying symptom tracking, menstrual cycle management, and mental wellness while respecting privacy and sensory sensitivities.</p>
     </section>
 
+    <!-- Our Mission -->
     <section class="card mission">
       <h2>Our Mission</h2>
-      <p>
-        To empower autistic women with PCOD/PCOS by providing a trustworthy, intuitive, and supportive health tracking app. 
-        We strive to make menstrual health and symptom management accessible, stress-free, and personalized.
-      </p>
+      <p>Our mission is to empower autistic women with the tools and guidance they need to understand their bodies, track symptoms, and manage hormonal and mental health effectively. We strive to create an inclusive, gentle, and intuitive platform that supports well-being without adding stress or confusion.</p>
     </section>
 
+    <!-- Our Values -->
     <section class="card values">
       <h2>Our Values</h2>
       <ul>
-        <li><strong>Accessibility:</strong> We design for autistic women with clear, calm, and simple UI.</li>
-        <li><strong>Privacy:</strong> Data is private by default and shared only with consent.</li>
-        <li><strong>Empowerment:</strong> Users get actionable insights and gentle reminders for self-care.</li>
-        <li><strong>Support:</strong> Encouraging language, minimal distractions, and sensory-friendly design.</li>
+        <li><strong>Accessibility:</strong> Calm, clear design optimized for autistic users.</li>
+        <li><strong>Privacy:</strong> Health data is protected and shared only with consent.</li>
+        <li><strong>Empowerment:</strong> Actionable insights and reminders to promote self-care.</li>
+        <li><strong>Support:</strong> Encouraging guidance and community resources to help users feel understood.</li>
       </ul>
     </section>
 
-    <section class="card team">
-      <h2>Meet the Team</h2>
-      <p>
-        Our team consists of healthcare professionals, UX designers, and software engineers committed to creating a tool that truly makes life easier for autistic women managing PCOD and PCOS.
-      </p>
+    <!-- Our Story -->
+    <section class="card story">
+      <h2>Our Story</h2>
+      <p>The NurtureHer team recognized that autistic women with PCOD and PCOS often face unique challenges in tracking cycles, symptoms, and mental health. Traditional health apps don’t always cater to sensory sensitivities or accessibility needs. We built NurtureHer to fill that gap — a safe, supportive, and intuitive platform that simplifies health tracking while promoting overall wellness.</p>
     </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="inner">
-      <p>© 2025 NurtureHer • Designed for autistic women with PCOD/PCOS</p>
-    </div>
-  </footer>
-
+  </main> 
+  <script src="../javascript/about.js"></script>
 </body>
 </html>
