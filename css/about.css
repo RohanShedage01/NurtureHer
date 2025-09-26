@@ -1,0 +1,117 @@
+:root {
+  --bg: #f6fbfa;            
+  --card: #ffffff;          
+  --muted: #4a4a4a;         
+  --accent: #7fcfc4;      
+  --accent-2: #e8ddff;      
+  --accent-3: #ffd9d4;       
+  --radius: 12px;
+  --max: 960px;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: #0f1720;
+  line-height: 1.6;
+}
+
+.inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background: linear-gradient(180deg, var(--accent) 0%, rgba(127,207,196,0.85) 100%);
+  padding: 28px 0;
+  text-align: center;
+}
+
+.site-header .brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #053233;
+}
+
+.site-header .tag {
+  margin-top: 6px;
+  color: #033f34;
+  opacity: 0.95;
+  font-size: 14px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(10,20,20,.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(10,20,20,.12);
+}
+
+.about-us h2,
+.mission h2,
+.values h2,
+.team h2 {
+  color: var(--accent);
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.about-us p,
+.mission p,
+.team p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.values ul {
+  list-style: disc inside;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.values li {
+  margin-bottom: 8px;
+}
+
+.team p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.site-footer {
+  padding: 20px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  background: var(--accent-2);
+  border-top: 1px solid #e1dfff;
+}
+
+@media (min-width: 720px) {
+  .about-us,
+  .mission,
+  .values,
+  .team {
+    padding: 28px;
+  }
+}
